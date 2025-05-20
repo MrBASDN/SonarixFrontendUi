@@ -1,0 +1,97 @@
+###items
+##cart
+cart items
+responsive: yes
+
+##product card
+add to cart doesn't light up
+change the cursor to pointer
+
+###User
+##index.php
+navbar1
+carousel
+new arrival
+category section
+explore products
+footer
+bugs : the next prev button in arrival doesn't work
+responsive: yes
+
+##advanceSearch.php
+navbar
+searchContainer
+filterContainer
+product list
+footer
+responsive: yes
+
+##singleProductView.php
+navbar
+Gallery View
+infoContainer
+reviewContainer
+suggestionContainer
+footer
+responsive: yes
+
+##aboutUs.php
+navbar
+about Shop
+locations container
+privacy polices
+terms and conditions
+footer
+responsive: yes
+
+###Profile
+##userLogin.php
+navbar
+signInContainer
+footer
+
+##profileSettings.php
+navbar
+profileNavbar
+profileInfo
+footer
+responsive: yes
+
+##OrderHistory.php
+navbar
+profileNavbar
+orderHistory table
+footer
+responsive: yes
+
+##reviewPage.php
+navbar
+profileNavbar
+review list
+footer
+responsive: yes
+
+###Admin
+##signIn.php
+signIn container
+responsive: ok
+
+##admin.php
+adminNavbar
+dashboard
+promotionContainer
+promotionEditPopup
+responsive: ok
+
+##product.php
+adminNavbar
+productList
+pagination
+productEditPopup
+responsive: ok
+
+##orders.php
+adminNavbar
+orderList
+orderInfoPopup
+responsive: ok

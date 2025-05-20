@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --first-level: 5;
+  --second-level: 10;
+  --third-level: 15;
+  --fourth-level: 20;
+  --fifth-level: 25;
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #f4f4f4;
+  --navbar-background-color: #00808080;
+  --primary-text-color: #000000;
+  --secondary-text-color: #555555;
+  --primary-accent-color: #008080;
+  --secondary-accent-color: #ff6347;
+  --border-color: #00000040;
+  --border-clear-color: #000000;
+}
+
+@media only screen and (min-width: 550px) {
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-accent-color);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--primary-accent-color);
+    border-radius: 2px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    cursor: grab;
+  }
+}
+
+/* Remove scrollbar styles for mobile */
+@media only screen and (max-width: 549px) {
+  * {
+    scrollbar-width: none;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}

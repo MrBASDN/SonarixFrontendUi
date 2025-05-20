@@ -1,0 +1,138 @@
+main {
+  h1 {
+    width: 100dvw;
+    text-align: center;
+    font-size: 32px;
+    margin: 25px 0 50px;
+  }
+  .orderContainer {
+    display: flex;
+    flex: 1;
+    min-width: 300px;  
+    max-width: fit-content;  
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: auto;
+    border-radius: 10px;
+    height: fit-content;
+    max-height: 700px;
+    .orderTable {
+      width: 
+      max-content;
+      height: max-content;
+    }
+    .tableHeader,
+    .orderInfo {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 25px;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      span {
+        min-width: 150px;
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
+    }
+    .tableHeader,
+    .dataRow {
+      position: relative;
+      margin: 10px 0;
+      padding: 10px 0;
+      &::after {
+        position: absolute;
+        min-width: 100%;
+        bottom: -7.5px;
+        content: "";
+        height: 1px;
+        background-color: var(--border-color);
+      }
+    }
+
+    .tableData {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 100%;
+
+      .dataRow {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        width: inherit;
+        &:hover {
+          cursor: pointer;
+        }
+        .orderInfo {
+          width: inherit;
+          display: flex;
+          flex-wrap: nowrap;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .infoContainer {
+          max-height: 0;
+          overflow: hidden;
+          opacity: 0;
+          transform: scaleY(0);
+          transform-origin: top;
+          transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+          display: flex;         
+          width: inherit;
+          justify-content: space-evenly;
+          align-items: center;
+          flex-wrap: nowrap;
+          flex-direction: column;
+          .product {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            
+            min-width: 100%;
+            gap: 10px;
+            padding: 15px;
+            position: relative;
+
+            &::after {
+              position: absolute;
+              width: 100%;
+              bottom: 0;
+              content: "";
+              height: 1px;
+              background-color: var(--border-color);
+            }
+            &:last-child {
+              padding-bottom: 0;
+              &::after {
+                display: none;
+              }
+            }
+            span:first-child {
+              width: 100%;
+              font-weight: bold;
+            }
+
+            span:not(:first-child) {
+              text-align: left;
+              padding: 5px 0;
+            }
+          }
+        }
+        .infoContainer.visible {
+          max-height: max-content;
+          opacity: 1;
+          transform: scaleY(1);
+        }
+      }
+    }
+  }
+}
